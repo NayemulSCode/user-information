@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import User from './components/User';
 import FontCart from './FontCart';
 
 
@@ -22,7 +23,9 @@ function App() {
       <div>
         {
           users.map(user=>
-           <p>{user.name.first}</p> 
+           <User 
+            name = {user.name.first}
+           /> 
           )
         }
       </div>
